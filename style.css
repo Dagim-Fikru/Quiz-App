@@ -5,3 +5,66 @@
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
+
+body{
+    background-color: #030000; 
+}
+.main{
+    background: steelblue;
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;
+    padding: 30px;
+    border-radius: 10px;
+}
+.main h1{
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 10px;
+}
+.quiz{
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+} 
+.quiz h2{
+    color: #000;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.btn{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background: steelblue;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer; 
+    
+} 
+.btn:hover{
+    background: #000;
+}
+.btn:focus{
+    outline: none;
+}
+#next-btn{
+    background: steelblue;
+    color: #fff;
+    font-weight: 300;
+    width: 100px;
+    margin: 20px auto 0;
+    display: none;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #fff; 
+    margin-right: 10px;
+    cursor: pointer;
+}
