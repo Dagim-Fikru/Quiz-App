@@ -57,10 +57,10 @@ function showQuestion() {
     button.addEventListener("click", checkAnswer);
   });
 }
+// console.log(questionArray[0].options[0]);
 function checkAnswer(e) {
   const selectedButton = e.target;
   const correct = selectedButton.dataset.correct;
-  //how to make the selected button black and the other buttons as they are
   Array.from(choices.children).forEach(function (button) {
     if (button.dataset.correct) {
       button.classList.add("correct");
