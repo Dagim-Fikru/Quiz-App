@@ -76,24 +76,23 @@ function checkAnswer(e) {
   next.addEventListener("click", nextQuestion);
 }
 function nextQuestion() {
+  if (currentQuestionIndex < questionArray.length) {
+    currentQuestionIndex++;
     if (currentQuestionIndex < questionArray.length) {
-        currentQuestionIndex++;
-    if (currentQuestionIndex < questionArray.length) {
-        showQuestion();
-    }else{
-        next.style.display = "none";
-        while(choices.firstChild){
-            choices.removeChild(choices.firstChild);
-        }
-        question.innerHTML = "You got " + score + " out of " + questionArray.length + " correct!";
-        next.innerHTML = "Restart";
-        next.style.display = "block";
-       
-
-        
+      showQuestion();
+    } else {
+      next.style.display = "none";
+      while (choices.firstChild) {
+        choices.removeChild(choices.firstChild);
+      }
+      question.innerHTML =
+        "You got " + score + " out of " + questionArray.length + " correct!";
+      next.innerHTML = "Restart";
+      next.style.display = "block";
     }
   } else {
-    startQuiz(); }
+    startQuiz();
+  }
 }
 
 startQuiz();
